@@ -241,7 +241,7 @@
 
                 {{-- Join --}}
                 @guest
-                    <a href="{{ url('auth/register') }}" class="py-2 px-4 text-primary-600 hover:text-primary-800 transition-colors duration-300 rounded-full hidden md:inline-block dark:text-gray-100 dark:hover:text-white">
+                    <a style="border: 2px solid cyan; border-radius: 7px; background-clip: padding-box;" href="{{ url('auth/register') }}" class="py-2 px-4 text-primary-600 hover:text-primary-800 transition-colors duration-300 rounded-full hidden md:inline-block dark:text-gray-100 dark:hover:text-white" onmouseover="this.style.borderColor='yellow';"onmouseout="this.style.borderColor='cyan';">
                         @lang('messages.t_join')
                     </a>
                 @endguest
